@@ -39,19 +39,55 @@
   }
   class Car extends Vehicle{
     private String modelName="S-class";
+    protected String modelDesigner="Finkie";
     public static void main(String [] args){
       Car obj=new Car();
       obj.honk();
       System.out.println("THis is car::");
-      System.out.println(obj.brand+ " "+obj.modelName);
+      System.out.println(obj.brand + " " + obj.modelName);
     }
   }
-  
-  class Inheritance extends Vehicle{
-    private String modelName="S-class";
+
+
+  //-------->>>>>> DEVARA EXAMPLE    <<<<<<------------------
+    class Devara{
+      public void Bayamkaram(){
+        System.out.println("Devara makes Red Sea!!");
+      }
+    }
+    class Vara extends Devara{
+      public void Romance(){
+        System.out.println("He will fall love with Thangam!!!");
+      }
+    }
+
+
+
+
+
+  class Inheritance{
     public static void main(String [] args){
-      Inheritance obj=new Inheritance();
-      obj.honk();
-      System.out.println(obj.brand+ " "+obj.modelName);
+      Car Vehicles=new Car();
+      Vehicles.honk();
+      System.out.println(Vehicles.brand + "  'S-class model designed by' " + Vehicles.modelDesigner);
+
+
+      //----->>>>>     Devara Example  <<<<----------
+      Vara NTR=new Vara();
+      System.out.println("Vara Have fear along with that he have love on:: ");
+      NTR.Romance();
+      System.out.println("Vara get inherits from Devara:: ");
+      NTR.Bayamkaram();
+      
     }
   }
+
+  
+  // class Inheritance extends Vehicle{
+  //   private String modelName="S-class";
+  //   public static void main(String [] args){
+  //     Inheritance obj=new Inheritance();
+  //     obj.honk();
+  //     System.out.println(obj.brand+ " "+obj.modelName);
+  //   }
+  // }
