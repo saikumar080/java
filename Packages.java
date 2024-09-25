@@ -26,6 +26,13 @@
             System.out.println("Enter user name:: ");
             String userName=myobj.nextLine();
             System.out.println("Username is:: "+ userName);
+            System.out.println("user age is :: ");
+            int age=myobj.nextInt();
+            System.out.println("user age is: "+age);
+            System.out.println("Enter user surname::");
+            String surname=myobj.next();
+            System.out.println("user surname :: "+surname);
+
         }
         
     }
