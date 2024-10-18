@@ -14,12 +14,10 @@ public class Constructors {
 
 
 
-    //Creating a class constructor for the Constructor Class.
-    // public  Constructors(int y){
-    //     x=y;//set the initial value for the attribute x;
-
-        
-    // }
+    //-------->>>>>>>     Creating a class constructor for the Constructor Class.    <<<<<<-------------
+    public  Constructors(int y){
+        x=y;//set the initial value for the attribute x;
+    }
 
 
     //------Examples------------
@@ -29,10 +27,15 @@ public class Constructors {
     }
     public static void main(String [] args){
         System.out.println("Learning About Constructors::: ");
-        // Constructors myobj=new Constructors(5);
-        // System.out.println(myobj.x);
+
+        //------->>>>>   Example for X value Attribute    <<<<<<<<----
+        Constructors myobj=new Constructors(5);
+        System.out.println(myobj.x);
+
+
+
        //------Example for Constructors---------
        Constructors myExample=new Constructors(2024, "AI Era Model");
-       System.out.println(myExample.modelYear + " "+myExample.modelName);
+       System.out.println(myExample.modelYear + "is the year of "+myExample.modelName);
     }
 }
