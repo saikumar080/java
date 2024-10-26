@@ -100,11 +100,11 @@ public class Modifiers {
         
     }
  }
-class Childrens extends Modifiers{
-   private int marriageYear=1996;
-   public static void main(String[] args){
-    Childrens parents=new Childrens();
-    System.out.println("Father's Name : "+ parents.marriageYear);
-   }
+// class Childrens extends Modifiers{
+//    private int marriageYear=1996;
+//    public static void main(String[] args){
+//     Childrens parents=new Childrens();
+//     System.out.println("Father's Name : "+ parents.marriageYear);
+//    }
    
-}
+// }

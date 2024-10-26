@@ -1,3 +1,5 @@
+import javax.print.attribute.standard.MediaSize.NA;
+
 public class Objects{
     int x=8,y;//class attribute.
     final int z=40;//Don't want the ability to override exisiting values
@@ -45,6 +47,9 @@ public void carModel(String model){
 }
 public int carMaxSpeed(int speed){
     return speed;
+}
+public String myName(String Name){
+    return Name;
 }
 
     public static void main(String[] args) {
@@ -115,6 +120,8 @@ public int carMaxSpeed(int speed){
         System.out.println("The MAximum speed of the car is :: "+myCar.carMaxSpeed(220));
         myCar.carNames("Saikumar");
         myCar.carOwnnedBy("Pillalamarri");
+       String name= myCar.myName("Sai");
+       System.out.println(name);
     }
 };
 

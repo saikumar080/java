@@ -1,8 +1,8 @@
 class Second{
     public static void main(String[] args){
         //---------->>>>>>>> This is code is excuting from Objects.java File
-        Objects myObj=new Objects();
-        System.out.println(myObj.x);
+        // Objects myObj=new Objects();
+        // System.out.println(myObj.x);
         Objects myCar=new Objects();
         myCar.carColor();
         myCar.carModel("Benz s-class");
