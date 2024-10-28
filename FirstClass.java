@@ -85,7 +85,7 @@ class FirstClass{
         // }
 
 
-//---another way to write condtional without currly brackets-------
+    //---another way to write condtional without currly brackets-------
         // if( a % 2==0)
         //     System.out.println("Bazina");
 
@@ -168,6 +168,100 @@ class FirstClass{
         //         default:System.out.println(" Invalid Number");
 
         //     }
+
+
+
+
+//-------------------->>>>>>>>>>>>>>>>>>>>      Loops              <<<<<<<<<<<<<<<<<<<<<<<<<---------------------------
+    
+
+    //-------------->>>>>>>>>>>>>>>>>>       for loop         <<<<<<<<<<<<----------------
+            //print the numbers from 0 to 10
+            // for(int i=0;i< 11;i++){
+            //     System.out.println(i);
+            // }
+
+
+
+    //------->>>>>>>>>>>>> While Loop   <<<<<<--------
+            // int i=0;
+            // while(i<11){
+            //     System.out.println(i);
+            //     i++;
+            // }
+
+    //-------->>>>>>> Do While loop <<<<<<<-----------
+         //.....In do while atleast one statement exicute;
+         //first it will print the statement the check it.
+            // int i=0;
+            // do {
+            //     System.out.println("sai");
+            //     i++;
+            // }while(i<-1);
+
+
+
+
+        
+        //---------print the sum of First n Natural Numbers------------------
+        // System.out.println("Enter the Natural Number:::   ");
+        // int n=sc.nextInt();
+        // int i=1;
+        // int sum=0;
+        // while(i<n){
+        //     sum+=i;
+        //     i++;
+        // };
+        // System.out.println(sum);
+
+
+
+        //---------Take Home: print all even numbers till n ---
+        // System.out.println("Enter number:: ");
+        // int num=sc.nextInt();
+        // int i=0;
+        // while(i<=num){
+        //     if(i%2 ==0){
+        //         System.out.println(i);
+        //     }
+        //     i++;
+        // }
+
+
+        //-----Run---------------
+        // for(; ;){
+        //     System.out.println("Saikumar");
+        // }
+       
+        int number;
+      
+        
+        do{
+           System.out.println("Enter the marks::: ");
+           int marks=sc.nextInt();
+           if(marks>=90){
+            System.out.println("This is Good");
+        
+           }else if (marks<=89 && marks >=60){
+            System.out.println("This is also Good");
+        
+           }else{
+            System.out.println("This is Good as well");
+            
+           }
+
+           System.out.println("Want to continue ? (Yes(1) or no(0))");
+           System.out.println("Enter the number::");
+           number = sc.nextInt();
+        }while(number>0);
+
+
+
+
+
+
+
+
 
 
         
