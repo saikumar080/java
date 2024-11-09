@@ -264,6 +264,63 @@ public class patterns {
             }
 
 
+
+
+    //------->>>>>>>    12. Palindromic Pattern    <<<<<--------
+            //👉reminder:-1.spacing.
+            //             ✨2.printing left part
+            //             ✨3.printing right part(where j loop starts from 2)
+            System.out.println("Palindromic Pattern:::::");
+            for(int i=1;i<=row;i++){
+                //===spacing===
+                for(int j=1;j<=row-i;j++){
+                    System.out.print(" ");
+                }
+                // printing left part
+                for(int j=i;j>=1;j--){
+                    System.out.print(j );
+                }
+
+                //printing right part
+                for(int j=2;j<=i;j++){
+                    System.out.print(j);
+                }
+                System.out.println();
+            }
+        
+
+
+        //-----Diamond Pattern-------
+            // 👉Reminder:- I.1. spacing
+            //                ✨ 2.printing starts where as condition is (j<=2*i-1);
+            //               ✨II.Reverse the outer loop.!!!
+                System.out.println("Diamond Pattern:::");
+                //upper pattern
+                for(int i=1;i<=row;i++){
+                    //====spacing====
+                    for(int j=1;j<=row-i;j++){
+                        System.out.print(" ");
+                    }
+                    //==printing stars====
+                    int starts=2*i-1;
+                    for(int j=1;j<=starts;j++){
+                        System.out.print("*");
+                    }
+                    System.out.println();
+                }
+                //lower pattern
+                for(int i=row;i>=1;i--){
+                    //====spacing====
+                    for(int j=1;j<=row-i;j++){
+                        System.out.print(" ");
+                    }
+                    //==printing stars====
+                    int starts=2*i-1;
+                    for(int j=1;j<=starts;j++){
+                        System.out.print("*");
+                    }
+                    System.out.println();
+                }
       
 
     }
