@@ -9,15 +9,15 @@ public class patterns {
 
 
         //---------->>>>>> 1.Rectangle pattern   <<<<<<<-----------------
-        // System.out.println("Rectangle Pattern:::   ");
-        // for(int i=0;i<row;i++){
-        //     // System.out.print("*");
-        //     for(int j=0;j<column;j++){
-        //         System.out.print(" *");
-        //     }
-        //     System.out.println();
-        //     // System.out.print("\n");
-        // }
+        System.out.println("Rectangle Pattern:::   ");
+        for(int i=0;i<row;i++){
+            // System.out.print("*");
+            for(int j=0;j<column;j++){
+                System.out.print(" *");
+            }
+            System.out.println();
+            // System.out.print("\n");
+        }
 
 
 
@@ -66,18 +66,18 @@ public class patterns {
             //------->>>>>>> 5. Inverted Half Pyramid (rotatd by 180deg)     <<<<<<<---------------
             //-----🌟 Without space for its' printing inverted half Pyramid🌟
             //---🌟 With space for its' printing triangle🌟
-            // System.out.println("Inverted Half Pyramid:::  ");
-            // for(int i=0;i<row;i++){
-            //     //inner loop -> space print
-            //    for(int j=0;j<row-i;j++){
-            //     System.out.print("  ");
-            //    }
+            System.out.println("Inverted Half Pyramid:::  ");
+            for(int i=0;i<row;i++){
+                //inner loop -> space print
+               for(int j=0;j<row-i;j++){
+                System.out.print("  ");
+               }
 
-            //    for(int j=0;j<=i;j++){
-            //     System.out.print(" *");
-            //    }
-            //    System.out.println();
-            // }
+               for(int j=0;j<=i;j++){
+                System.out.print(" *");
+               }
+               System.out.println();
+            }
 
 
 
@@ -125,6 +125,12 @@ public class patterns {
         //🌟This should you remember to learn🌟
         //👉Sum of i +  j== even print 1;
         //👉sum of i+ j== odd print 0;
+        //0-1 Traingle::::
+        // 1
+        // 0 1
+        // 1 0 1
+        // 0 1 0 1
+        // 1 0 1 0 1
         // System.out.println("0-1 Traingle::::   ");
         // for(int i=0;i<row;i++){
         //     for(int j=0;j<=i;j++){
@@ -182,7 +188,7 @@ public class patterns {
 
 
         //------->>>>>>>>>> 2.Print a Number Pyramid      <<<<<<<<<<<---------
-        // System.out.println("Print a Number Pyramid::::");
+        //  System.out.println("Print a Number Pyramid::::");
         // int number=1;
         // for(int i=1;i<=row;i++){
         //     //spacing
@@ -197,10 +203,68 @@ public class patterns {
         //     number++;
         //     System.out.println();
         // }
-
-
+        //----------->>>>>Second Approach<<<<<<<<<-------------
+        // int number2=1;
+        // for(int i=0;i<row;i++){
+        //     //---spacing----
+        //     for(int j=0;j<=row-i;j++){
+        //         System.out.print(" ");
+        //     };
+        //     //----printing starts-----
+        //     for(int j=0;j<=i;j++){
+        //         System.out.print(number2+" ");
+        //     }
+        //     number2++;
+        //     System.out.println();
+        // }
 
         
+    //------->>>>>>>>>>>>   11. Butterfly Pattern      <<<<<<<<<------
+    //👉reminder:- 1.upper   ==>>   1.left pattern
+    //                      ✨ ==>>    2.spaces pattern== 2*(row-i);
+    //                      ✨  ==>    3.right pattern
+    //              2.lower ==> same but change outer loop inverse manner. 
+        System.out.println("Butterfly Pattern::::   ");
+         
+        //-------upperhalf-------------
+            for(int i=1;i<=row;i++){
+                //-----left stars---
+                for(int j=1;j<=i;j++){
+                    System.out.print("*");
+                }
+                //---spacing----
+                int spaces=2*(row-i);
+                for(int j=1;j<=spaces;j++){
+                    System.out.print(" ");
+                }
+                // ----right starts---
+                for(int j=1;j<=i;j++){
+                    System.out.print("*");
+                }
+                System.out.println();
+            }
+
+
+            //---dowm part----
+            for(int i=row;i>=1;i--){
+                //-----left stars---
+                for(int j=1;j<=i;j++){
+                    System.out.print("*");
+                }
+                //---spacing----
+                int spaces=2*(row-i);
+                for(int j=1;j<=spaces;j++){
+                    System.out.print(" ");
+                }
+                // ----right starts---
+                for(int j=1;j<=i;j++){
+                    System.out.print("*");
+                }
+                System.out.println();
+            }
+
+
+      
 
     }
 }
