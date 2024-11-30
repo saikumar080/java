@@ -290,7 +290,7 @@ public class patterns {
         
 
 
-        //-----Diamond Pattern-------
+        //-----13.Diamond Pattern-------
             // 👉Reminder:- I.1. spacing
             //                ✨ 2.printing starts where as condition is (j<=2*i-1);
             //               ✨II.Reverse the outer loop.!!!
