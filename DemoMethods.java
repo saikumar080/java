@@ -22,13 +22,13 @@ public class DemoMethods {
         // System.out.println("Return from Add() using return keyword:: "+vaue);
 
 
-        // int calculationValue=calculation(3, 4,"+");
-        // System.out.println("This method is running based on int parameter: "+ calculationValue);
-        // System.out.println("This method is running based on int parameter: "+ calculation(3,4,"-"));
-        // System.out.println("This method is running based on int parameter: "+ calculation(3,4,"*"));
-        // System.out.println("This method is running based on int parameter: "+ calculation(3, 4,"/"));
-        // double calculationValue1=calculation(3.2,4.8,"+");
-        // System.out.println("This is the method coming from double parameter:: "+calculationValue1);
+        int calculationValue=calculation(3, 4,"+");
+        System.out.println("This method is running based on int parameter: "+ calculationValue);
+        System.out.println("This method is running based on int parameter: "+ calculation(3,4,"-"));
+        System.out.println("This method is running based on int parameter: "+ calculation(3,4,"*"));
+        System.out.println("This method is running based on int parameter: "+ calculation(3, 4,"/"));
+        double calculationValue1=calculation(3.2,4.8,"+");
+        System.out.println("This is the method coming from double parameter:: "+calculationValue1);
 
 
 
