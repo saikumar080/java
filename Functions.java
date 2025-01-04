@@ -1,5 +1,20 @@
-import java.util.*;;
+import java.util.*;
+ class Multiplication{
+    public  void  printTable(int num){
+        for(int i=1;i<=10;i++){
+    
+            System.out.println(num+" * "+i+" = "+ num*i);
+        }
+    }
+}
 public class Functions {
+     //1.Print a given name in a function:::
+         public static  void  myName(String name){
+            System.out.println("My name is "+name);
+            // return;
+          }
+
+
     // 2.Make a function to add 2 numbers and return the sum
     public static int Sum(int a,int b){
         return a+b;
@@ -46,6 +61,21 @@ public class Functions {
                 System.out.println("Prime");
             }
         }
+
+
+
+        //check Given number is event or not:-
+        public static String checkEvenOrOdd(int num){
+            
+            if(num%2==0){
+                return "Even";
+            }else{
+                return "Odd";
+            }
+        }
+
+
+        //---- >>>>>>>>>>     Main Method      <<<<<<<<<<------------
             public static void main(String[] args) {
         System.out.println(":::::::::   Functions::::::::");
         Scanner sc=new Scanner(System.in);
@@ -57,12 +87,16 @@ public class Functions {
         System.out.println("Enter String name:: ");
         sc.nextLine();
         String name=sc.nextLine();
-       myName(name);
        sc.close();
-       //2.print add 2 numbers
-    
+       //1. print name of person:-
+        //    myName(name);
+
+
+    //2.print add 2 numbers
     //    int sumValue=Sum(num1,num2);
     //    System.out.println(sumValue);
+
+
 
         //3.print multiply 2 numbers:-
         // int multiplication=mutliply(num1, num2);
@@ -78,14 +112,19 @@ public class Functions {
         // System.out.println(factorial(num2));
 
 
+        //Check Number is Even or Odd:-
+        String checkEvenorOddNumber=checkEvenOrOdd(num2);
+        System.out.println(checkEvenorOddNumber);
+
+
+        //print Tables:-
+        Multiplication tableClass=new Multiplication();
+        tableClass.printTable(num2);
+
 
 
 
       
     }
-         //1.Print a given name in a function:::
-         public static  void  myName(String name){
-            System.out.println("My name is "+name);
-            // return;
-          }
+        
 }
