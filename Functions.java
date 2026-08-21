@@ -89,27 +89,27 @@ public class Functions {
         String name=sc.nextLine();
        sc.close();
        //1. print name of person:-
-        //    myName(name);
+           myName(name);
 
 
     //2.print add 2 numbers
-    //    int sumValue=Sum(num1,num2);
-    //    System.out.println(sumValue);
+       int sumValue=Sum(num1,num2);
+       System.out.println(sumValue);
 
 
 
         //3.print multiply 2 numbers:-
-        // int multiplication=mutliply(num1, num2);
-        // System.out.println(multiplication);
+        int multiplication=mutliply(num1, num2);
+        System.out.println(multiplication);
 
 
         //4.factorial of a number:-
-        // int factorialValue=factorial(num2);
-        // System.out.println(factorialValue);
+        int factorialValue=factorial(num2);
+        System.out.println(factorialValue);
 
         //check prime:-
-        // checkPrime(num2);
-        // System.out.println(factorial(num2));
+        checkPrime(num2);
+        System.out.println(factorial(num2));
 
 
         //Check Number is Even or Odd:-
